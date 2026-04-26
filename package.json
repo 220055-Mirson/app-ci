@@ -2,6 +2,6 @@
   "name": "app-ci",
   "version": "1.0.0",
   "scripts": {
-    "test": "node app.js"
+    "test": "node server.js"
   }
 }

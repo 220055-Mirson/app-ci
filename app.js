@@ -1,1 +1,0 @@
-console.log("Aplicacao CI/CD funcionando");

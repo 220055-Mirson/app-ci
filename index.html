@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CI/CD - App em Produção</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 48px; margin: 0; }
+        .badge {
+            background: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .date {
+            margin-top: 30px;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CI/CD Funcionando!</h1>
+        <p>Esta aplicação foi implantada automaticamente pelo Jenkins.</p>
+        <div class="badge">✅ Deploy realizado com sucesso!</div>
+        <div class="date" id="date"></div>
+    </div>
+    <script>
+        document.getElementById('date').innerHTML = 'Deploy: ' + new Date().toLocaleString();
+    </script>
+</body>
+</html>
